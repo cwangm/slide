@@ -29,6 +29,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r data structure, echo = TRUE}
+library(ggplot2)
 data(mpg)
 str(mpg)
 ```
