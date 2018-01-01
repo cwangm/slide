@@ -1,1 +1,162 @@
-default
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products Course Project Presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products Course Project Presentation">
+  <meta name="author" content="">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products Course Project Presentation</h1>
+    <h2></h2>
+    <p><br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Background</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The linear regression prediction model is based on the &quot;mpg&quot; dataset in ggplot2.</li>
+<li>The dataset contains the following variables
+
+<ul>
+<li>Miles per gallon (MPG) in city</li>
+<li>MPG on highway</li>
+<li>Engine displacement</li>
+</ul></li>
+<li>Goal: to develop an web-based applications for separately predicting MPG for driving in the city versus highway based on engline displacement</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Data Structure in R</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">data(mpg)
+</code></pre>
+
+<pre><code>## Warning in data(mpg): data set &#39;mpg&#39; not found
+</code></pre>
+
+<pre><code class="r">str(mpg)
+</code></pre>
+
+<pre><code>## Error in str(mpg): object &#39;mpg&#39; not found
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Web-Application Link and Instructions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><a href="https://cwangm.shinyapps.io/course_project/">Link to the web-based application</a></li>
+<li>Instructions:
+
+<ul>
+<li>Input: the slider on the side bar panel control the input for engine displacement, with 0.1 L increment</li>
+<li>Input: the checkboxes below determines whether the user wants to calculate city or highway MPG</li>
+<li>Output: the resulting scatter plot of MPG vs engine displacement is shown on the right</li>
+<li>Output: the regression line in color (red for city and blue for hwy) is overlaid on the scatter plot</li>
+<li>Output: actual predicted MPG is shown below the plot, rounded to 2 decimal points</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="example.png" alt="Web-view"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Background'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Data Structure in R'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Web-Application Link and Instructions'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Example'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
